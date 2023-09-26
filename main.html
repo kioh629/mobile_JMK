@@ -13,9 +13,9 @@
 <body>
 <!-- 헤더 -->
     <header id="header">
-            <button class="search"><img src="img/search.png" alt="게임검색"></button>
+            <button class="search"><img src="img/search_w.png" alt="게임검색"></button>
             <span></span>
-            <div id="logo"><h1><a href="#"><img src="img/netmarble_positive.png" alt="로고"></a></h1></div>
+            <div id="logo"><h1><a href="#"><img src="img/netmarble_w.png" alt="로고"></a></h1></div>
             <button class="ham_btn" alt="메뉴버튼">
                 <span></span>
                 <span></span>
@@ -94,23 +94,76 @@
     </div> <!-- hammenu end -->
 
 <!-- 배너 -->
-    <div id="banner" class="cf">
-        <ul>
-            <li><a href="#"><img src="img/banner1.jpg" alt="배너1_세븐나이츠 키우기"> </a></li>
-            <li><a href="#"><img src="img/banner2.jpg" alt="배너2_에이지오브타이탄"> </a></li>
-            <li><a href="#"><img src="img/banner3.jpg" alt="배너3_신의탑:새로운세계"> </a></li>
-            <li><a href="#"><img src="img/banner4.jpg" alt="배너4_제2의 나라"> </a></li>
-            <li><a href="#"><img src="img/banner5.jpg" alt="배너5_나 혼자만 레벨업:Arise"> </a></li>            
-        </ul>
+    <div id="banner_wrap">
+        <div id="banner" class="cf">
+            <ul>
+                <li><a href="#"><img src="img/banner1.jpg" alt="배너1_세븐나이츠 키우기"> </a></li>
+                <li><a href="#"><img src="img/banner2.jpg" alt="배너2_에이지오브타이탄"> </a></li>
+                <li><a href="#"><img src="img/banner3.jpg" alt="배너3_신의탑:새로운세계"> </a></li>
+                <li><a href="#"><img src="img/banner4.jpg" alt="배너4_제2의 나라"> </a></li>
+                <li><a href="#"><img src="img/banner5.jpg" alt="배너5_나 혼자만 레벨업:Arise"> </a></li>            
+            </ul>
+        </div>
+        <div id="ban_idc">
+            <ul class="idc">
+                <li id="btn0"><a href="img/banner1.jpg"><img src="img/state_over.png" alt="인디케이터활성화"></a></li>
+                <li id="btn1"><a href="img/banner2.jpg"><img src="img/state_out.png" alt="인디케이터활성화"></a></li>
+                <li id="btn2"><a href="img/banner3.jpg"><img src="img/state_out.png" alt="인디케이터활성화"></a></li>
+                <li id="btn3"><a href="img/banner4.jpg"><img src="img/state_out.png" alt="인디케이터활성화"></a></li>
+                <li id="btn4"><a href="img/banner5.jpg"><img src="img/state_out.png" alt="인디케이터활성화"></a></li>
+            </ul>
+            
+        </div>
+        <div id="arrow">
+            <a class="prev" href="#"><img src="img/ban_prev.png" alt="이전 배너"></a>
+            <a class="next" href="#"><img src="img/ban_next.png" alt="다음 배너"></a>
+        </div>
     </div>
-    <div id="ban_idc">
-        <ul class="idc">
-            <li id="btn0"><a href="img/banner1.jpg"><img src="img/state_over.png" alt="인디케이터활성화"></a></li>
-            <li id="btn1"><a href="img/banner2.jpg"><img src="img/state_out.png" alt="인디케이터활성화"></a></li>
-            <li id="btn2"><a href="img/banner3.jpg"><img src="img/state_out.png" alt="인디케이터활성화"></a></li>
-            <li id="btn3"><a href="img/banner4.jpg"><img src="img/state_out.png" alt="인디케이터활성화"></a></li>
-            <li id="btn4"><a href="img/banner5.jpg"><img src="img/state_out.png" alt="인디케이터활성화"></a></li>
+
+<!-- 이벤트&뉴스 -->
+    <div id="Event_new">
+        <ul>
+            <li>Event & News</li>
+            <li><a href="#">더 보기</a></li>
+            <li><a href="#"><img src="img/more.png" alt="이벤트 및 뉴스 더 보기"></a></li>
         </ul>
+        <ul class="page1">
+            <li id="event_SevenKnights">
+                <a class="event_title" href="#">G마켓 X 세븐나이츠 키우기<br>
+                    그랜드 론칭 기념 100원 딜!</a><br>
+                <a class="game_title" href="#">세븐나이츠 키우기</a>
+            </li>
+            <li id="event_grandcross">
+                <a class="event_title" href="#">[Mr. 보니언 노트 #5]<br>
+                    신규 콘텐츠 '크로스 디멘션'</a><br>
+                <a class="game_title" href="#">그랜드크로스: 에이지 오브 타이탄</a>
+            </li>
+        </ul>
+        <ul class="page2">
+            <li id="event_TowerOfGod">
+                <a class="event_title" href="#"> <신의 탑: 새로운 세계><br>
+                    3rd 개발자 노트</a><br>
+                <a class="game_title" href="#">신의 탑: 새로운 세계</a>
+            </li>
+            <li id="event_SevenSins">
+                <a class="event_title" href="#">일곱 개의 대죄 X 진격의 거인<br>
+                    콜라보레이션 리턴즈!</a><br>
+                <a class="game_title" href="#">일곱 개의 대죄</a>
+            </li>
+        </ul>
+        <ul class="page3">
+            <li id="event_2ndKingdom">
+                <a class="event_title" href="#">크로스필드 및 신규 지역<br>          
+                    대응 예정 사항 안내</a><br>
+                <a class="game_title" href="#">제2의 나라: Cross World</a>
+            </li>
+            <li id="event_lvUpAlone">
+                <a class="event_title" href="#">[나 혼자만 레벨업:ARISE]<br>
+                    1차 메인 PV 공개!</a><br>
+                <a class="game_title" href="#">나 혼자만 레벨업: ARISE</a>
+            </li>
+        </ul>
+        
     </div>
 </body>
 </html>

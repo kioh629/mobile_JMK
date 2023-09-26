@@ -46,10 +46,10 @@ body {
     top: 0;
     width: 100%;
     height: 70px;
-    background-color: rgba(255,226,0,1);
+    background-color: rgba(255,226,0,0);
     z-index: 100;
     display: flex;
-}
+} /* 스크롤 시 색상 변경 시키기  */
 .search {
     width: 50px;
     height: 70px;
@@ -94,7 +94,8 @@ body {
     width: 30px;
     height: 4px;
     border-radius: 10px;
-    background: #5C3722;
+    /* background: #5C3722; */
+    background: #fff;
     opacity: 1;
     transform: rotate(0deg);
 }
@@ -347,14 +348,20 @@ body {
 
 
 /* 배너 */
+#banner_wrap {
+    width:100%;
+    height: 75%;
+    position: relative;
+}
 #banner {
     width:100%;
+    height: 75%;
     overflow:hidden;
     z-index: 0;
 }
 #banner ul{
     position:relative; 
-    left:0; 
+    left:0;
     /* left: n*-100% -> 이미지 변경 */
     width:500%;	
 }
@@ -365,9 +372,42 @@ body {
 #banner ul li img{
     width:100%;
 }
-.idc {
+#ban_idc {
     position: absolute;
-
+    top: 90%;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 2;
+}
+.idc {
     display: flex;
-    margin: 0 auto;
+}
+.idc li {
+    margin-left: 10px;
+}
+.idc li:first-child {
+    margin-left: 0px;
+}
+#banner_wrap::after {
+    width: 100%;
+    height: 99%;
+    position: absolute;
+    left: 0; top: 0; content: "";
+    background: linear-gradient(to bottom, 
+    rgba(0,0,0,0.7)0,
+    rgba(0,0,0,0)30%,
+    rgba(0,0,0,0)70%,
+    rgba(0,0,0,0.7)100%)
+}
+#arrow .prev {
+    position: absolute;
+    left: 2%;
+    top: 50%;
+    transform: translateY(-50%);
+}
+#arrow .next {
+    position: absolute;
+    right: 2%;
+    top: 50%;
+    transform: translateY(-50%);
 }
