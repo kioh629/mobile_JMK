@@ -25,4 +25,7 @@ $(function(){
             $(this).find(".open_list").attr("src","img/close_menu.png");
         }
     });
+
+    
+
 });

@@ -45,45 +45,52 @@ body {
     position: fixed;
     top: 0;
     width: 100%;
-    height: 50px;
-    background: #ffe200;
+    height: 70px;
+    background-color: rgba(255,226,0,1);
+    z-index: 100;
     display: flex;
 }
 .search {
     width: 50px;
-    height: 50px;
+    height: 70px;
     border: none;
-    background: #ffe200;
+    background-color: rgba(255,226,0,0);
     cursor: pointer;
 }
+.search img {
+    top: 20px;
+    left: 20px;
+}
 #logo {
-    width: 130px;
+    width: 160px;
     margin: 0 auto;
+    height: 70px;
+    line-height: 70px;
 }
 #logo img {
-    width:110px;
+    width:160px;
 }
 
 /* ham button */
 .ham_btn {
-    width: 50px;
-    height: 50px;
+    width: 70px;
+    height: 70px;
     border: none;
-    background: #ffe200;
+    background-color: rgba(255,226,0,0);
     cursor: pointer;
 }
 .ham_btn span:nth-child(1) {
-    top: 11px;
+    top: 21px;
 }
 .ham_btn span:nth-child(2) {
-    top: 22px;
+    top: 32px;
 }
 .ham_btn span:nth-child(3) {
-    top: 33px;
+    top: 43px;
 }
 .ham_btn span {
     position: absolute;
-    right: 10px;
+    right: 20px;
     width: 30px;
     height: 4px;
     border-radius: 10px;
@@ -117,15 +124,17 @@ body {
     z-index: 100000;
 }
 #ham_logo {
-    width: 130px;
+    width: 160px;
     margin: 0 auto;
+    height: 70px;
+    line-height: 70px;
 }
 #ham_logo img {
-    width:110px;
+    width:160px;
 }
 #ham_header {
     width: 100%;
-    height: 50px;
+    height: 70px;
     background: #ffe200;
 }
     /* 햄메뉴close버튼 */
@@ -136,19 +145,19 @@ body {
 }
 .close_ham {
     width: 50px;
-    height: 50px;
+    height: 70px;
     border: none;
     background: #ffe200;
     cursor: pointer;
 }
 .close_ham span:nth-child(1) {
-    top: 11px;
+    top: 21px;
 }
 .close_ham span:nth-child(2) {
-    top: 22px;
+    top: 32px;
 }
 .close_ham span:nth-child(3) {
-    top: 33px;
+    top: 43px;
 }
 .close_ham span {
     position: absolute;
@@ -335,3 +344,30 @@ body {
 }
 
 /* hammenu 끝 */
+
+
+/* 배너 */
+#banner {
+    width:100%;
+    overflow:hidden;
+    z-index: 0;
+}
+#banner ul{
+    position:relative; 
+    left:0; 
+    /* left: n*-100% -> 이미지 변경 */
+    width:500%;	
+}
+#banner ul li {
+    float:left; 
+    width:20%;
+}
+#banner ul li img{
+    width:100%;
+}
+.idc {
+    position: absolute;
+
+    display: flex;
+    margin: 0 auto;
+}
