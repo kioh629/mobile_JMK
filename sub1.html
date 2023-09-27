@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/sub1.css">
+    <script src="js/jquery-1.11.2.min.js"></script>
+    <script src="js/sub1.js"></script>
+
+</head>
+<body>
+<!-- 헤더 -->
+    <header id="header">
+            <button class="search"><img src="img/search.png" alt="게임검색"></button>
+            <span></span>
+            <div id="logo"><h1><a href="#"><img src="img/netmarble.png" alt="로고"></a></h1></div>
+            <button class="ham_btn" alt="메뉴버튼">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+    </header>
+
+<!-- 햄버거메뉴 -->
+    <div id="modal"></div>
+    <div id="hammenu">
+        <header id="ham_header">
+            <div id="ham_logo"><h1><a href="#"><img src="img/netmarble.png" alt="로고"></a></h1></div>
+            <button class="close_ham" alt="메뉴버튼">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </header>
+        <div id="hamwrap">
+            <ul class="login">
+                <li class="login_icon"><a href="#"><img src="img/login.png" alt="프로필이미지"></a></li>
+                <ul class="login_text">
+                    <li class="login_main"><a href="#">로그인</a></li>
+                    <li class="account">
+                        <div><a href="#" class="login_sub">내 정보</a></div>
+                        <div><a href="#" class="login_sub">회원가입</a></div>
+                        <div><a href="#" class="login_sub">ID/PW찾기</a></div>
+                    </li>
+                </ul>
+            </ul>
+            <div id="hamwrap_menu">
+                <div class="list">
+                    <ul class="list_main">
+                        <li class="icon"><img src="img/game_list.png" alt="게임목록아이콘"></li>
+                        <li class="main">게임목록</li>
+                        <li><img src="img/open_menu.png" class="open_list" alt="게임목록펼치기"></li>
+                    </ul>
+                    <ul class="sub">
+                        <li><a href="#">즐겨 찾는 게임</a></li>
+                        <li><a href="#">인기 게임</a></li>
+                        <li><a href="#">모바일 게임</a></li>
+                        <li><a href="#">PC 게임</a></li>
+                        <li><a href="#">전체 게임 보기</a></li>
+                    </ul>
+                </div>
+                <div class="alarm">
+                    <ul class="list_main">
+                        <li class="icon"><img src="img/game_alarm.png" alt="게임소식아이콘"></li>
+                        <li class="main">게임소식</li>
+                        <li ><img src="img/open_menu.png" class="open_list" alt="게임목록펼치기"></li>
+                    </ul>
+                    <ul class="sub">
+                        <li><a href="#">이벤트</a></li>
+                        <li><a href="#">공지사항</a></li>
+                        <li><a href="#">신작소식</a></li>           
+                    </ul>
+                </div>
+                <div class="list_main_nosub">
+                    <li class="icon"><a href="#"><img src="img/nmb_news.png" alt="넷마블뉴스아이콘"></a></li>
+                    <li class="main"><a href="#">넷마블뉴스</a></li>
+                </div>
+                <div class="list_main_nosub">
+                    <li class="icon"><a href="#"><img src="img/channel_nmb.png" alt="채널넷마블아이콘"></a></li>
+                    <li class="main"><a href="#">채널넷마블</a></li>
+                </div>
+                <div class="list_main_nosub">
+                    <li class="icon"><a href="#"><img src="img/nmb_store.png" alt="넷마블스토어아이콘"></a></li>
+                    <li class="main"><a href="#">넷마블스토어</a></li>
+                </div>
+                <div class="list_main_nosub">
+                    <li class="icon"><a href="#"><img src="img/customer.png" alt="고객센터아이콘"></a></li>
+                    <li class="main"><a href="#">고객센터</a></li>
+                </div>
+            </div> <!--hamwrap_menu end -->
+        </div> <!--hamwrap end-->
+    </div> <!-- hammenu end -->
+
+<!-- 이벤트&뉴스 -->
+    <section id="Event_new">
+        <div id="pageAll">
+            <ul class="page1 pg">
+                <li id="event_SevenKnights" class="pg_text">
+                    <a class="event_title" href="#">G마켓 X 세븐나이츠 키우기<br>
+                        그랜드 론칭 기념 100원 딜!</a><br>
+                    <a class="game_title" href="#">세븐나이츠 키우기</a>
+                </li>
+                <li id="event_grandcross" class="pg_text">
+                    <a class="event_title" href="#">[Mr. 보니언 노트 #5]<br>
+                        신규 콘텐츠 '크로스 디멘션'</a><br>
+                    <a class="game_title" href="#">그랜드크로스: 에이지 오브 타이탄</a>
+                </li>
+                <li id="event_SevenSins" class="pg_text">
+                    <a class="event_title" href="#">일곱 개의 대죄 X 진격의 거인<br>
+                        콜라보레이션 리턴즈!</a><br>
+                    <a class="game_title" href="#">일곱 개의 대죄</a>
+                </li> 
+            </ul>
+            <ul class="page2 pg">         
+                <li id="event_TowerOfGod" class="pg_text">
+                    <a class="event_title" href="#"> <신의 탑: 새로운 세계><br>
+                        3rd 개발자 노트</a><br>
+                    <a class="game_title" href="#">신의 탑: 새로운 세계</a>
+                </li>
+                <li id="event_2ndKingdom" class="pg_text">
+                    <a class="event_title" href="#">크로스필드 및 신규 지역<br>          
+                        대응 예정 사항 안내</a><br>
+                    <a class="game_title" href="#">제2의 나라: Cross World</a>
+                </li>
+                <li id="event_lvUpAlone" class="pg_text">
+                    <a class="event_title" href="#">[나 혼자만 레벨업:ARISE]<br>
+                        1차 메인 PV 공개!</a><br>
+                    <a class="game_title" href="#">나 혼자만 레벨업: ARISE</a>
+                </li> 
+            </ul>
+        </div>
+    </section>
+</body>
+</html>
