@@ -26,6 +26,15 @@ $(function(){
         }
     });
 
-    
+    // tab 메뉴
+    $("#tab_menu > ul:not("+$("ul.tab li a.selected").attr("href")+")").hide();
+    $("ul.tab li a").on("click", function(){
+       $("ul.tab li a").removeClass("selected");
+       $(this).addClass("selected");
+       $("#tab_menu ul").hide();
+       $($(this).attr("href")).show();
+       return false;
+    });
+
 
 });
