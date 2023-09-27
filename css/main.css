@@ -388,6 +388,9 @@ body {
 .idc li:first-child {
     margin-left: 0px;
 }
+.idc li a img {
+    width: 13px;
+}
 #banner_wrap::after {
     width: 100%;
     height: 99%;
@@ -410,4 +413,47 @@ body {
     right: 2%;
     top: 50%;
     transform: translateY(-50%);
+}
+
+/* 이벤트&뉴스 */
+#event_h {
+    margin: 40px 3% 0 3%;
+    font-family: "netmarbleB";
+    height:30px;
+    line-height: 30px;
+}
+.section_title {
+    width: 50%;
+    font-size: 24px;
+    color: #39221c;
+    margin-left: 2%;
+    float: left;
+    clear: both;
+}
+.more {
+    float: right;
+    display: flex;
+    text-align: center;
+    padding-right: 10px;
+}
+.more a:first-child{
+    width: 100%;
+    font-size: 14px;
+    color: #78726d;
+}
+.more a img {
+    margin-left: 5px;
+    width: 13px;
+    line-height: 30px;
+    position: relative;
+}
+.pg_text {
+    position: relative;
+    top: 135px;
+    width: 93.75%;
+    height: 135px;
+    margin: 15px auto;
+    top: 50%;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px 1px rgba(0, 0, 0, .2);
 }
