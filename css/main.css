@@ -353,16 +353,18 @@ body {
     width:100%;
     height: 75%;
     position: relative;
+    z-index:1;
+    overflow: hidden;
 }
 #banner {
     width:100%;
     height: 75%;
     overflow:hidden;
-    z-index: 0;
+    z-index: 2;
 }
 #banner ul{
     position:relative; 
-    left:-300%;
+    left: -00%;
     /* left: n*-100% -> 이미지 변경 */
     width:500%;	
 }
@@ -378,7 +380,7 @@ body {
     top: 90%;
     left: 50%;
     transform: translateX(-50%);
-    z-index: 2;
+    z-index: 3;
 }
 .idc {
     display: flex;
@@ -398,10 +400,14 @@ body {
     position: absolute;
     left: 0; top: 0; content: "";
     background: linear-gradient(to bottom, 
-    rgba(0,0,0,0.7)0,
+    rgba(0,0,0,0.8)0,
     rgba(0,0,0,0)30%,
     rgba(0,0,0,0)70%,
     rgba(0,0,0,0.7)100%)
+}
+#arrow a{
+    cursor: pointer;
+    z-index:3;
 }
 #arrow .prev {
     position: absolute;
@@ -417,7 +423,7 @@ body {
 }
 
 /* 이벤트&뉴스 */
-#event_h {
+.section_head {
     margin: 30px 3% 0px 3%;
     font-family: "netmarbleB";
     height:30px;
@@ -425,7 +431,7 @@ body {
 }
 .section_title {
     width: 50%;
-    font-size: 22px;
+    font-size: 26px;
     color: #39221c;
     margin-left: 2%;
     float: left;
@@ -436,6 +442,14 @@ body {
     display: flex;
     text-align: center;
     padding-right: 10px;
+    transform: translateY(0%);
+    transition: all 0.2s;
+}
+.more:hover {
+    transform: translateY(-3%);
+}
+.more a:hover {
+    color: #e95559;
 }
 .more a:first-child{
     width: 100%;
@@ -508,6 +522,7 @@ body {
 }
 #Event_new {
     overflow: hidden;
+    width: 100%;
     margin: 20px auto;
 }
 #pageAll {
@@ -525,11 +540,126 @@ body {
     position: absolute;
     margin: 10px 0;
     left: 50%;
-    transform: translateX(-50%);
+    transform: translateX(-60%);
+    z-index: 3;
 }
 
 #section1_idc img {
     height: 13px;
     margin-left: 15px;
 }
+#section1_arrow {
+    display: flex;
+    position: absolute;
+    margin-top: 11px;
+    left: 50%;
+    transform: translateX(-48%);
+}
+#section1_arrow li:first-child {
+    margin-right: 80px;
+}
+#section1_arrow li img {
+    height: 20px;
+    line-height: 20px;
+}
 
+/* 인기게임 */
+#games {
+    margin-top: 80px;
+}
+.games {
+    width: 93.75%;
+    height: 180px;
+    margin: 15px auto;
+    top: 50%;
+    border-radius: 10px;
+    box-shadow: 1px 8px 10px 2px rgba(0, 0, 0, .1);
+    cursor: pointer;
+}
+.game_site_link {
+    transform: translateY(0%);
+    transition: all 0.2s;
+}
+.game_site_link:hover {
+    transform: translateY(-3%);
+}
+.game1 {
+    background: url(../img/game1.jpg) no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.game2 {
+    background: url(../img/game2.jpg) no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.game3 {
+    background: url(../img/game3.jpg) no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.game4 {
+    background: url(../img/game4.jpg) no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.game5 {
+    background: url(../img/game5.jpg) no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.game6 {
+    background: url(../img/game6.jpg) no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.game_link {
+    margin-bottom: 30px;
+    height: 22px;
+    line-height: 22px;
+    transform: translateY(0%);
+    transition: all 0.2s;
+}
+.game_link_left {
+    float: left;
+    margin-left: 20px;
+}
+.game_link_title {
+    font-family: "netmarbleB";
+    font-size: 22px;
+    color: #39221c;
+    line-height: 22px;
+}
+.game_link_title:hover {
+    color: #ffc400;
+}
+.game_link_category {
+    font-family: "pretendard ExtraLight";
+    font-size: 14px;
+    position: relative;
+    margin-left: 10px;
+    top:-3px;
+    color: #78726d;
+}
+.game_link_right {
+    float: right;
+    margin-right: 25px;
+}
+.game_link_right img {
+    height: 15px;
+}
+.moregame {
+    width: 100%;
+    background-color: #fff;
+    border-top: 1px solid #e8e8e8;
+    border-left: none;
+    border-right: none;
+    border-bottom: 1px solid #e8e8e8;
+    font-family: "pretendard black";
+    font-size: 16px;
+    padding: 10px;
+}
+.moregame:hover {
+    background-color: #e8e8e8;
+    color: #e95559;
+}
