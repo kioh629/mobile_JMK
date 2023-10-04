@@ -462,8 +462,8 @@ body {
     line-height: 30px;
 }
 .pg_text {
-    width: 93.75%;
-    height: 135px;
+    width: 90%;
+    height: 100px;
     margin: 15px auto;
     top: 50%;
     border-radius: 10px;
@@ -477,12 +477,12 @@ body {
 }
 .pg_text a {
     position: relative;
-    top: 25%;
+    top: 20%;
     left: 5%;
 }
 .pg_text a:first-child {
-    font-family: "pretendard Extrabold";
-    font-size: 18px;
+    font-family: "pretendard Black";
+    font-size: 16px;
 }
 .pg_text a:last-child {
     font-family: "pretendard Medium";
@@ -563,13 +563,79 @@ body {
     line-height: 20px;
 }
 
+/* 채널넷마블 */
+#ch_nmb {
+    margin-top: 50px;
+    width: 100%;
+    overflow: hidden;
+}
+.ch_title {
+    font-size: 26px;
+    color: #39221c;
+    float: left;
+    clear: both;
+    margin-right: 20px;
+    margin-left: 2%;
+}
+
+#chn_logo img{
+    float: left;
+    width: 110px;
+    margin-left: 0;
+    margin-top: 5px;
+}
+#ch_video {
+    margin-top: 20px;
+    text-align: center;
+}
+#ch_thum {
+    display: flex;
+    margin-top: 10px;
+    margin-left: 5%;
+    position: relative;
+    width: 200%;
+    left: 0%;
+    /* 0 -50 -100 -106 */
+}
+
+#ch_thum ul {
+    font-family: pretendard medium;
+    font-size: 12px;
+    width: 50%;
+    margin-right: 2%;
+    transform: translateY(0%);
+    transition: all 0.3s;
+}
+#ch_thum ul:hover {
+    transform: translateY(-2%);
+}
+#ch_thum ul li img {
+    width: 100%;
+}
+
+#ch_idc {
+    width: 100%;
+    position: absolute;
+    transform: translateY(-121px);
+}
+#ch_idc li:first-child {
+    float: left;
+}
+#ch_idc li:last-child {
+    float: right;
+}
+
+#ch_idc img {
+    height: 30px;
+}
+
 /* 인기게임 */
 #games {
-    margin-top: 80px;
+    margin-top: 50px;
 }
 .games {
     width: 93.75%;
-    height: 180px;
+    height: 200px;
     margin: 15px auto;
     top: 50%;
     border-radius: 10px;
@@ -584,22 +650,22 @@ body {
     transform: translateY(-3%);
 }
 .game1 {
-    background: url(../img/game1.jpg) no-repeat;
+    background: url(../img/game1_1.jpg) no-repeat;
     background-position: center;
     background-size: cover;
 }
 .game2 {
-    background: url(../img/game2.jpg) no-repeat;
+    background: url(../img/game2_2.jpg) no-repeat;
     background-position: center;
     background-size: cover;
 }
 .game3 {
-    background: url(../img/game3.jpg) no-repeat;
+    background: url(../img/game3_1.jpg) no-repeat;
     background-position: center;
     background-size: cover;
 }
 .game4 {
-    background: url(../img/game4.jpg) no-repeat;
+    background: url(../img/game4_1.jpg) no-repeat;
     background-position: center;
     background-size: cover;
 }
@@ -609,7 +675,7 @@ body {
     background-size: cover;
 }
 .game6 {
-    background: url(../img/game6.jpg) no-repeat;
+    background: url(../img/game6_1.jpg) no-repeat;
     background-position: center;
     background-size: cover;
 }
