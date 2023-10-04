@@ -103,4 +103,19 @@ $(function(){
             });
             return false;
         });
+            // header 색 변화
+    $(window).on("scroll",function(){
+        if($(window).scrollTop()> 0){
+            $("#header").css("background-color","rgba(255,226,0,1)");
+            $("#header button.search img").attr("src","img/search.png");
+            $("#header #logo h1 a img").attr("src","img/netmarble.png");
+            $(".ham_btn span").css("background","#5C3722");
+        } else {
+            $("#header").css("background-color","rgba(255,226,0,0)");
+            $("#header button.search img").attr("src","img/search_w.png");
+            $("#header #logo h1 a img").attr("src","img/netmarble_w.png");
+            $(".ham_btn span").css("background","#fff");
+        }
+           
+    });
 });
