@@ -122,4 +122,9 @@ $(function(){
     $("#logo").on("click",function(){
         $("html, body").animate({scrollTop:0},500); 
     });
+
+    // 맨 위로 버튼
+    $("#moveTop").on("click",function(){
+        $("html, body").animate({scrollTop:0},500);
+    })
 });
