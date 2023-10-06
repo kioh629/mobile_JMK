@@ -40,6 +40,7 @@ body {
     margin: 0 auto;
 }
 
+
 /* Header 부분 */
 #header {
     position: fixed;
@@ -47,7 +48,7 @@ body {
     width: 100%;
     height: 50px;
     background-color: rgba(255,226,0,1);
-    z-index: 10000;
+    z-index: 100;
     display: flex;
 } /* 스크롤 시 색상 변경 시키기  */
 .search {
@@ -63,6 +64,8 @@ body {
     left: 10px;
 }
 #logo {
+    position: absolute;
+    z-index: 10002;
     width: 130px;
     margin: 0 auto;
     height: 50px;
@@ -72,6 +75,28 @@ body {
     width:130px;
 }
 
+/* header search */
+.search_form {
+    width: 100%;
+    position: fixed;
+    left: 60px;
+    top: 7.5px;
+    z-index: 10001;
+}
+#search-input {
+    border: none;
+    width: 75%;
+    height: 35px;
+    line-height: 35px;
+    border-radius: 50px;
+    text-align: center;
+    font-family: "netmarbleL";
+    font-size: 16px;
+    outline: none;
+    opacity: 0;
+}
+
+
 /* ham button */
 .ham_btn {
     width: 50px;
@@ -79,6 +104,9 @@ body {
     border: none;
     background-color: rgba(255,226,0,0);
     cursor: pointer;
+    position: absolute;
+    right: 0;
+    z-index: 10002;
 }
 .ham_btn span:nth-child(1) {
     top: 11px;
@@ -354,7 +382,7 @@ body {
 
 .pg_text {
     width: 93.75%;
-    height: 135px;
+    height: 130px;
     margin: 15px auto;
     top: 50%;
     border-radius: 10px;
@@ -373,7 +401,7 @@ body {
 }
 .pg_text a:first-child {
     font-family: "pretendard Extrabold";
-    font-size: 18px;
+    font-size: 17px;
 }
 .pg_text a:last-child {
     font-family: "pretendard Medium";

@@ -72,6 +72,28 @@ body {
     width:130px;
 }
 
+/* header search */
+.search_form {
+    width: 100%;
+    position: fixed;
+    left: 60px;
+    top: 7.5px;
+    z-index: 10001;
+}
+#search-input {
+    border: none;
+    width: 75%;
+    height: 35px;
+    line-height: 35px;
+    border-radius: 50px;
+    text-align: center;
+    font-family: "netmarbleL";
+    font-size: 16px;
+    outline: none;
+    opacity: 0;
+}
+
+
 /* ham button */
 .ham_btn {
     width: 50px;
@@ -79,6 +101,9 @@ body {
     border: none;
     background-color: rgba(255,226,0,0);
     cursor: pointer;
+    position: absolute;
+    right: 0;
+    z-index: 10002;
 }
 .ham_btn span:nth-child(1) {
     top: 11px;
@@ -492,32 +517,32 @@ body {
 
 #event_SevenKnights {
     background: url(../img/event1.jpg) no-repeat;
-    background-position: center;
+    background-position: left;
     background-size: cover;
 }
 #event_grandcross {
     background: url(../img/event2.jpg) no-repeat;
-    background-position: center;
+    background-position: left;
     background-size: cover;
 }
 #event_TowerOfGod {
     background: url(../img/event3.jpg) no-repeat;
-    background-position: center;
+    background-position: left;
     background-size: cover;
 }
 #event_SevenSins {
     background: url(../img/event4.jpg) no-repeat;
-    background-position: center;
+    background-position: left;
     background-size: cover;
 }
 #event_2ndKingdom {
     background: url(../img/event5.jpg) no-repeat;
-    background-position: center;
+    background-position: left;
     background-size: cover;
 }
 #event_lvUpAlone {
     background: url(../img/event6.jpg) no-repeat;
-    background-position: center;
+    background-position: left;
     background-size: cover; 
 }
 #Event_new {

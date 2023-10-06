@@ -40,4 +40,13 @@ $(function(){
     $("#moveTop").on("click",function(){
         $("html, body").animate({scrollTop:0},500);
     })
+    
+    // 검색창 활성화
+    $(".search").on("click",function(){
+        if ($("#search-input").css("opacity")==0) {
+            $("#search-input").animate({opacity:1},100)
+        } else {
+            $("#search-input").animate({opacity:0},100)
+        }
+    })
 });
