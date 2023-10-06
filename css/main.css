@@ -481,7 +481,7 @@ body {
     left: 5%;
 }
 .pg_text a:first-child {
-    font-family: "pretendard Black";
+    font-family: "pretendard Extrabold";
     font-size: 16px;
 }
 .pg_text a:last-child {
@@ -721,7 +721,7 @@ body {
     border-left: none;
     border-right: none;
     border-bottom: 1px solid #e8e8e8;
-    font-family: "pretendard black";
+    font-family: "pretendard Extrabold";
     font-size: 16px;
     padding: 10px;
 }
