@@ -118,5 +118,8 @@ $(function(){
         }
     });
 
-    
+    // 헤더 로고 클릭 시 맨 위로 가게
+    $("#logo").on("click",function(){
+        $("html, body").animate({scrollTop:0},500); 
+    });
 });
