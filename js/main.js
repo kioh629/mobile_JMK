@@ -6,13 +6,15 @@ $(function(){
         $("#hammenu").animate({
             marginRight: "80%"
         },300);
+        $("body").addClass("body_lock");
     });
 
-    $(".close_ham").on("click",function(){
+    $(".close_ham, #modal").on("click",function(){
         $("#modal").css("display","none");
         $("#hammenu").animate({
             marginRight: "0"
         },300);
+        $("body").removeClass("body_lock");
     });
 
     // 서브메뉴
@@ -131,9 +133,12 @@ $(function(){
     // 검색창 활성화
     $(".search").on("click",function(){
         if ($("#search-input").css("opacity")==0) {
-            $("#search-input").animate({opacity:1},100)
+            $("#search-input").animate({opacity:1,width:75+"%"},100)
+            $("#logo").css("display","none")
         } else {
-            $("#search-input").animate({opacity:0},100)
+            $("#search-input").animate({opacity:0,width:0},100)
+            $("#logo").css("display","block")
+
         }
     })
 });
