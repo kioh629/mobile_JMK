@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>회원가입</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/join.css">
+    <script src="js/jquery-1.11.2.min.js"></script>
+    <script src="js/join.js"></script>
+</head>
+<body>
+<!-- 헤더 -->
+<header id="header">
+    <div id="search-form">
+    <form action="" class="search_form">
+        <input type="text" id="search-input" placeholder=" 검색하실 게임명을 입력해주세요">
+    </form>
+    </div>
+        <button class="search"><a href="main.html"><img src="img/prev.png" alt="게임검색"></a></button>
+        <span></span>
+        <li id="title">회원가입</li>
+        <button class="ham_btn" alt="메뉴버튼">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+</header>
+
+<!-- 햄버거메뉴 -->
+<div id="modal"></div>
+<div id="hammenu">
+    <header id="ham_header">
+        <div id="ham_logo"><h1><a href="#"><img src="img/netmarble.png" alt="로고"></a></h1></div>
+        <button class="close_ham" alt="메뉴버튼">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+    </header>
+    <div id="hamwrap">
+        <ul class="login">
+            <li class="login_icon"><a href="#"><img src="img/login.png" alt="프로필이미지"></a></li>
+            <ul class="login_text">
+                <li class="login_main"><a href="#">로그인</a></li>
+                <li class="account">
+                    <div><a href="#" class="login_sub">내 정보</a></div>
+                    <div><a href="join.html" class="login_sub">회원가입</a></div>
+                    <div><a href="#" class="login_sub">ID/PW찾기</a></div>
+                </li>
+            </ul>
+        </ul>
+        <div id="hamwrap_menu">
+            <div class="list">
+                <ul class="list_main">
+                    <li class="icon"><img src="img/game_list.png" alt="게임목록아이콘"></li>
+                    <li class="main">게임목록</li>
+                    <li><img src="img/open_menu.png" class="open_list" alt="게임목록펼치기"></li>
+                </ul>
+                <ul class="sub">
+                    <li><a href="#">즐겨 찾는 게임</a></li>
+                    <li><a href="#">인기 게임</a></li>
+                    <li><a href="#">모바일 게임</a></li>
+                    <li><a href="#">PC 게임</a></li>
+                    <li><a href="#">전체 게임 보기</a></li>
+                </ul>
+            </div>
+            <div class="alarm">
+                <ul class="list_main">
+                    <li class="icon"><img src="img/game_alarm.png" alt="게임소식아이콘"></li>
+                    <li class="main">게임소식</li>
+                    <li ><img src="img/open_menu.png" class="open_list" alt="게임목록펼치기"></li>
+                </ul>
+                <ul class="sub">
+                    <li><a href="sub1.html">이벤트</a></li>
+                    <li><a href="#">공지사항</a></li>
+                    <li><a href="#">신작소식</a></li>           
+                </ul>
+            </div>
+            <div class="list_main_nosub">
+                <li class="icon"><a href="#"><img src="img/nmb_news.png" alt="넷마블뉴스아이콘"></a></li>
+                <li class="main"><a href="#">넷마블뉴스</a></li>
+            </div>
+            <div class="list_main_nosub">
+                <li class="icon"><a href="#"><img src="img/channel_nmb.png" alt="채널넷마블아이콘"></a></li>
+                <li class="main"><a href="#">채널넷마블</a></li>
+            </div>
+            <div class="list_main_nosub">
+                <li class="icon"><a href="#"><img src="img/nmb_store.png" alt="넷마블스토어아이콘"></a></li>
+                <li class="main"><a href="#">넷마블스토어</a></li>
+            </div>
+            <div class="list_main_nosub">
+                <li class="icon"><a href="#"><img src="img/customer.png" alt="고객센터아이콘"></a></li>
+                <li class="main"><a href="#">고객센터</a></li>
+            </div>
+        </div> <!--hamwrap_menu end -->
+    </div> <!--hamwrap end-->
+</div> <!-- hammenu end -->
+
+    <form action="">
+        <fieldset id="login_info">
+            <ul>
+                <legend>회원정보입력</legend>
+            </ul>
+            <ul id="idpw">
+                <li>
+                    <label for="id"><h3>아이디</h3></label>
+                    <input type="text" id="id" class="box_short box">
+                    <a class="check_button" href="#">중복확인</a>
+                </li>
+                <p class="info">영문 또는 숫자로 4~12자를 입력해주세요.</p>
+                <li>
+                    <label for="pwd1"><h3>비밀번호</h3></label>
+                    <input type="password" id="pwd1" class="box_long box">
+                </li>
+                <p class="info">영문, 숫자를 혼합하여 8~15자로 입력해주세요.</p>
+                <li>
+                    <label for="pwd2"><h3>비밀번호 확인</h3></label>
+                    <input type="password" id="pwd2" class="box_long box">
+                </li>
+                <p class="info">영문, 숫자를 혼합하여 8~15자로 입력해주세요.</p>
+            </ul>
+        </fieldset>
+        <fieldset id="personal_info">
+            <ul>
+                <li class="name">
+                    <label for="name"><h3>이름</h3></label>
+                    <input type="text" id="name" class="box_long box">
+                </li>
+                <li class="phone">
+                    <label for="phone"><h3>휴대폰 번호</h3></label>
+                    <input type="text" id="phone" class="box_short box">
+                    <a class="check_button" href="#">인증</a>  
+                </li>
+                    <div class="sms cf">
+                        <p>정보성 메시지 수신 동의</p>
+                        <p class="smschk">
+                            <input type="radio" name="chk-p" id="chk1" class="chkbox">
+                            <label for="chk1">동의</label>
+                            <input type="radio" name="chk-p" id="chk2" class="chkbox">
+                            <label for="chk2">거절</label>
+                        </p>                       
+                    </div>                    
+                    <li id="email">
+                    <label for="email"><h3>이메일 주소</h3></label>
+                    <input type="text" id="email" class="box_long box">
+                    </li>
+                <div class="sms cf">
+                        <p>정보성 메시지 수신 동의</p>
+                        <p class="smschk">
+                            <input type="radio" name="chk-e" id="chk3" class="chkbox">
+                            <label for="chk3">동의</label>
+                            <input type="radio" name="chk-e" id="chk4" class="chkbox">
+                            <label for="chk4">거절</label>                            
+                        </p>                        
+                </div>
+
+            </ul>
+        </fieldset>
+                 <li id="guide">
+                    <ul>고객님의 정보를 모두 입력하시면 회원가입이 완료됩니다.</ul>
+                    <ul>입력된 정보는 개인정보취급방침에 의해 안전하게 보호받습니다.</ul>
+                </li>
+                <li id="button cf">
+                    <input type="submit" value="가입 완료" class="btn_complete btn">
+                    <input type="reset" value="돌아가기" class="btn_back btn">
+                </li>   
+        </form>
+
+    <!-- footer -->
+    <footer>
+        <button id="moveTop"> &#8593 맨 위로</button>
+        <h1><a href="#"><img src="img/NB logo.png" alt="넷마블로고"></a></h1>
+        <ul id="sns">
+            <li><a href="#"><img src="img/sns_i.png" alt="넷마블 인스타그램"></a></li>
+            <li><a href="#"><img src="img/sns_f.png" alt="넷마블 페이스북"></a></li>
+            <li><a href="#"><img src="img/sns_t.png" alt="넷마블 트위터"></a></li>
+            <li><a href="#"><img src="img/sns_y.png" alt="넷마블 유튜브"></a></li>
+        </ul>
+        <ul id="footer_txt">
+            <li><a href="#">회사소개</a></li>
+            <li><a href="#">광고/제휴문의</a></li>
+            <li><a href="#">약관보기</a></li>
+            <li><a href="#">개인정보처리방침</a></li>
+        </ul>
+        <address>
+            Copyright &copy; Netmarble Corp. All Rights Reserved.
+        </address>
+    </footer>
+
+</body>
+
+</html>
