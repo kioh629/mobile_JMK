@@ -28,50 +28,16 @@ $(function(){
         }
     });
 
-    // 배너
-    let bnnNum = 0;
+    // 배너 - slick 적용
+    $("#slide_banner").slick({
+        dots: true, // 인디케이터 활성화
+        autoplay: true,
+        infinite: true,
+        autoplaySpeed: 3000,
+        slidesToShow: 1, // 한 화면에 보여줄 아이템 수
+        slidesToScroll: 1,  // 한번에 슬라이드 시킬 아이템 수
+    });
 
-        // next button
-    $(".next").on("click",function(){
-        bnnNum ++;
-        if (bnnNum > 4) bnnNum = 0
-        book_w = $("#banner").width();
-        $("#banner ul").animate({left:-bnnNum*book_w},500,function(){
-            $(".idc img").attr("src","img/state_out.png");
-            $(".idc img").eq(bnnNum).attr("src","img/state_over.png");
-        })
-    });
-        // prev button
-    $(".prev").on("click",function(){
-        bnnNum--;
-        if(bnnNum < 0) bnnNum = 4
-        book_w = $("#banner").width();
-        $("#banner ul").animate({left:-bnnNum*book_w},500,function(){
-            $(".idc img").attr("src","img/state_out.png");
-            $(".idc img").eq(bnnNum).attr("src","img/state_over.png");
-        })
-    });
-        // indicator
-    $(".idc li a").on("click", function(){
-        let strName = $(this).parent().attr("id");
-        slideTarget(strName.substr(3,1));
-        return false;
-    })
-    function slideTarget(n) {
-        const pos = Number(n)*-100+"%";
-        $("#banner ul").animate({left:pos},500,function(){
-            $(".idc img").attr("src","img/state_out.png");
-            $(".idc img").eq(n).attr("src","img/state_over.png");
-        })
-    }
-        // 자동 슬라이드
-    let btnNum=0;
-    setInterval(function(){
-        btnNum++;
-        if(btnNum>4) btnNum=0;
-        $(".idc li a").eq(btnNum).trigger("click");
-        //trigger : 강제로 이벤트 실행시킴
-    },4000);
 
         // 이벤트 패널 인디케이터
         $("#section1_idc li a").on("click", function(){
@@ -105,7 +71,7 @@ $(function(){
             });
             return false;
         });
-            // header 색 변화
+    // header 색 변화
     $(window).on("scroll",function(){
         if($(window).scrollTop()> 0){
             $("#header").css("background-color","rgba(255,226,0,1)");

@@ -45,7 +45,7 @@ body {
     top: 0;
     width: 100%;
     height: 50px;
-    background-color: rgba(255,226,0,0);
+    background: rgba(255,226,0,0);
     z-index: 100;
     display: flex;
 } /* 스크롤 시 색상 변경 시키기  */
@@ -394,41 +394,9 @@ body {
     overflow:hidden;
     z-index: 2;
 }
-#banner ul{
-    position:relative; 
-    left: -00%;
-    /* left: n*-100% -> 이미지 변경 */
-    width:500%;	
-}
-#banner ul li {
-    float:left; 
-    width:20%;
-}
-#banner ul li img{
-    width:100%;
-}
-#ban_idc {
-    position: absolute;
-    top: 90%;
-    left: 50%;
-    transform: translateX(-50%);
-    z-index: 3;
-}
-.idc {
-    display: flex;
-}
-.idc li {
-    margin-left: 10px;
-}
-.idc li:first-child {
-    margin-left: 0px;
-}
-.idc li a img {
-    width: 13px;
-}
 #banner_wrap::after {
     width: 100%;
-    height: 99%;
+    height: 100%;
     position: absolute;
     left: 0; top: 0; content: "";
     background: linear-gradient(to bottom, 
@@ -437,22 +405,78 @@ body {
     rgba(0,0,0,0)70%,
     rgba(0,0,0,0.7)100%)
 }
-#arrow a{
+#slide_banner {
+    position:relative; 
+    /* left: n*-100% -> 이미지 변경 */
+    width:100%;	
+    float:left; 
+}
+#slide_banner img{
+    width:100%;
+}
+
+/* slick 컨트롤 버튼 */
+#banner button {
     cursor: pointer;
-    z-index:3;
 }
-#arrow .prev {
+#banner button::before {
+    font-family: "xeicon";
+    color: #fff;
+    font-size:60px;
+}
+.slick-prev {
     position: absolute;
-    left: 2%;
+    left: 0;
     top: 50%;
     transform: translateY(-50%);
+    z-index: 3;
+    border: none;
+    background: none;
+    font-size: 0;
+    color: transparent;
 }
-#arrow .next {
+.slick-prev::before {
+    content:"\e93d";
+}
+.slick-next {
     position: absolute;
-    right: 2%;
+    right: 0%;
     top: 50%;
     transform: translateY(-50%);
+    z-index: 3;
+    border: none;
+    background: none;
+    font-size: 0;
+    color: transparent;
 }
+.slick-next::before {
+    content:"\e940";
+}
+/* slick 인디케이터 (프레젠테이션) */
+.slick-dots {
+    position: absolute;
+    top: 90%;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 3;
+}
+.slick-dots li {
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+}
+.slick-dots li button {
+    font-size: 0;
+    color: #fff;
+    width: 15px; height: 15px;
+    background: rgb(255, 255, 255);
+    border-radius: 7.5px;
+    border: none;
+}
+.slick-dots .slick-active button {
+    background: #ffe200;
+}
+
 
 /* 이벤트&뉴스 */
 .section_head {
