@@ -47,6 +47,7 @@ body {
 #header {
     position: fixed;
     top: 0;
+    left: 0;
     width: 100%;
     height: 50px;
     background: rgba(255,226,0,0);
@@ -388,13 +389,12 @@ body {
 #banner_wrap {
     width:100%;
     height: 75%;
-    position: relative;
     z-index:1;
     overflow: hidden;
 }
 #banner {
     width:100%;
-    height: 75%;
+    height: 80%;
     overflow:hidden;
     z-index: 2;
 }
@@ -409,10 +409,7 @@ body {
 }
 
 #slide_banner {
-    position:relative; 
-    /* left: n*-100% -> 이미지 변경 */
     width:100%;	
-    float:left; 
 }
 #slide_banner img{
     width:100%;
@@ -664,9 +661,11 @@ body {
 }
 #ch_thum {
     margin-top: 10px;
+    overflow: hidden;
 }
 
 #ch_thum ul {
+    width: 100%;
     font-family: 'pretendard Medium';
     color: #39221c;
     font-size: 16px;

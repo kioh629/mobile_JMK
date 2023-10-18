@@ -62,7 +62,7 @@ $(function(){
 
     // header 색 변화
     $(window).on("scroll",function(){
-        if($(window).scrollTop() != 0){
+        if($(window).scrollTop() > 0){
             $("#header").css("background-color","rgba(255,226,0,1)");
             $(".search img").attr("src","img/search.png");
             $("#logo h1 a img").attr("src","img/netmarble.png");
